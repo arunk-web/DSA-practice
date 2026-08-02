@@ -4,15 +4,15 @@ using namespace std;
 void applydnf(vector<int> &v , int n){
     int low = 0;
     int mid = 0;
-    int high = n-1;
+    int high =  n-1;
 
-    while(mid <= high){
-        if(v[mid] == 0){
-            swap(v[mid],v[low]);
+    while(mid <=  high){
+        if(v[mid] ==  0){
+            swap(v[mid], v[low]);
             low++;
             mid++;
         }
-        else if(v[mid] == 1){
+        else if(v[mid ] == 1){
             mid++;
         }
         else {
