@@ -1,0 +1,17 @@
+// Write a function to solve the following equation a3 + a2b + 2a2b + 2ab2 + ab2 + b3.
+
+// Write a program to accept three values in order of a, b and c and get the result of the above equation.
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int a,b,c ; cin>>a>>b>>c;
+
+    int ans = a*a*a + a*a*b + 2*a*a*b + 2*a*b*b + a*b*b + b*b*b;
+    cout<<ans<<endl;
+
+    
+    return 0;
+}
