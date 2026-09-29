@@ -1,21 +1,33 @@
-#include<bits.stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 vector<vector<int>> sum(vector<int> &v,int n){
     vector<vector<int>> ans;
+    sort(v.begin(),v.end());
 
     for(int i = 0 ; i < n ; i++){
-        int mid = i+1;
-        int high = n-1;
+        if(i > 0 && v[i] == v[i-1]) continue;
+        int j = i+1;
+        int k = n-1;
 
-        while(mid < high){
-            int sum = v[i] + v[mid] + v[high];
+        while(j < k){
+            int sum = v[i] + v[j] + v[k];
 
-            if(sum == 0){
-                ans.push_back({v[i],v[mid],v[high]});
-                mid++;
-                high--;
-            } 
+            if(sum > 0){
+                k--;
+
+            }else if(sum < 0){
+                j++;
+            }
+            
+            else {
+                ans.push_back({v[i],v[j],v[k]});
+                while(j < k && v[j] == v[j+1]) j++; 
+                // j++;
+                while(j < k && v[k] == v[k-1]) k--; 
+                j++;
+                k--;
+            }
         }
     }
 
