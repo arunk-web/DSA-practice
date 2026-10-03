@@ -41,5 +41,18 @@ int main(){
         cin>>v[i];
     }
 
+    vector<vector<int>> ans = sum(v,n);
+
+
+    // for printing the vector of vector
+    for(auto num : ans){
+        for(auto x: num){
+            cout<<x<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+
 
 }
