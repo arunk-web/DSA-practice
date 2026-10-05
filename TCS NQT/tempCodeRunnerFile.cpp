@@ -1,4 +1,2 @@
-int sol(vector<int> &v, int n) {
-
-    
-// }
+int check;cin>>check;
+    int k;cin>>k;
