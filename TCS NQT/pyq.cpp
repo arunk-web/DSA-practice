@@ -20,9 +20,9 @@ int main(){
     vector<int> ans;
 
     if(mpp[check] >= k){
-        for(auto v : vec){
+        for(auto v :  vec){
             int value  = v.first;
-            int freq = v.second;
+            int freq =  v.second;
 
             if(freq == check){
                 ans.push_back(value);

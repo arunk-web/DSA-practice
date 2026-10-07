@@ -27,12 +27,12 @@ int main()
     // cout << "ans is : " << ans << endl;
 
     int cnt = 0;
-    while(m > 0 || p > 0){
+    while(m > 0  || p > 0){
         if(m >= k){
             m -= k;
             cnt++;
         }
-        else if(p >= j){
+        else if(p  >= j){
             p -= j;
             cnt++;
         }
@@ -44,7 +44,7 @@ int main()
     }
 
 
-    cout<<(n-cnt)<<endl;
+    cout<<(n-cnt )<<endl;
 
     return 0;
 }
