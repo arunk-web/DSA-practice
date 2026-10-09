@@ -1,2 +1,2 @@
-int check;cin>>check;
-    int k;cin>>k;
+nt n,m;
+    cin>>n>>m;
