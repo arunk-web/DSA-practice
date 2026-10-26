@@ -24,6 +24,7 @@ int findnthPrime(int n){
     }
     return  -1;
 }
+
 int main(){
     int n1,n2;  cin>>n1>>n2;
 
